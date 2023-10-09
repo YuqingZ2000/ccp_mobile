@@ -1,0 +1,159 @@
+body{
+    margin: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+    background-color:aliceblue;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: left;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 0.6cm;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+img, video, figure{
+    padding: 5px;
+    margin: 10px 0 10px;
+    border: 4px solid darkkhaki;
+    border-radius: 20px;
+}
+
+/* Exception for travel figures */
+figure > img, figure > video{
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    font-style: italic;
+    padding: 0 4px;
+    font-size: medium;
+    text-align: center;
+    max-width: 200px;
+}
+
+ul{
+    display: inline-block;
+    margin-left: 50px;
+    list-style-type: square;
+}
+
+ol{
+    display: inline-block;
+    margin-left: 50px;
+    list-style-type: decimal;
+}
+
+span{
+    display: block;
+}
+
+header{
+	margin: 10px 0;
+}
+
+/* Edit for CSS Mobile HW */
+/* Style the navigation bar */
+nav{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: beige;
+    border: 2px solid khaki;
+    font-size: x-large;
+}
+
+.active{
+	background: white;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: darkblue;
+}
+
+a:visited{
+    color: black;
+}
+
+/* Style the link in the main */
+#main a{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+/* Style the skip class */
+.skip{
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus{
+    position: absolute;
+    top: 10px;
+    border: 2px solid black;
+    background: white;
+}
+
+/* Style nav element when in focus */
+nav li:focus{
+    border: 2px solid black;
+} 
+
+/* Center the main image */
+h2 + img, span + img, .gif-element + img{
+    display: block;
+    margin: 10px auto 10px;
+}
+
+/* Add grid to image gallery */
+/* Grid for index and travel */
+.grid, .grid1, .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3px;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+/* Grid for recipe */
+.grid1{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Add the media query */
+@media (prefers-reduced-motion: reduce) {
+    .gif-element{
+      display: none;
+    }
+}
+
